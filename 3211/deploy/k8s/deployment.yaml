@@ -31,7 +31,8 @@ spec:
     spec:
       serviceAccountName: api-tester-3211
       nodeSelector:
-        kubernetes.io/hostname: k8s-master
+        # Pod를 배포할 node ###
+        kubernetes.io/hostname: rocky-k8s-master
       containers:
         - name: api-tester-3211
           # 1pro는 본인의 dockerhub username으로 변경해 주세요.
